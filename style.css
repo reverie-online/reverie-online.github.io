@@ -1,0 +1,78 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Container for better element alignment */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.hero {
+  background-image: url("path/to/your/background.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  animation: fade-in 2s ease-in-out;
+}
+
+/* Navigation styles */
+.main-nav {
+  background-color: #222;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none; /* Removed underlining */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+/* Adjust content margin to accommodate fixed navigation */
+.content {
+  margin-top: 60px; /* Adjust as needed */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
